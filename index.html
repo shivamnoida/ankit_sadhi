@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>अंकित 💍 आशा — शुभ विवाह</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Background layers -->
+  <canvas id="starfield"></canvas>
+  <canvas id="fireworks"></canvas>
+  <div id="petals"></div>
+  <div class="bg-glow g1"></div>
+  <div class="bg-glow g2"></div>
+  <div class="bg-glow g3"></div>
+
+  <!-- ===== PAGE 1: COVER ===== -->
+  <section class="page" id="page1">
+    <div class="corner-deco tl">✦</div>
+    <div class="corner-deco tr">✦</div>
+    <div class="corner-deco bl">✦</div>
+    <div class="corner-deco br">✦</div>
+
+    <div class="cover-wrap">
+      <div class="om-block anim-drop">
+        <span class="om-symbol">🕉️</span>
+        <p class="om-text">|| श्री गणेशाय नमः ||</p>
+      </div>
+
+      <div class="title-block anim-glow-in">
+        <div class="swastik-line">
+          <span class="sw">卐</span>
+          <h1 class="main-title">शुभ विवाह</h1>
+          <span class="sw">卐</span>
+        </div>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="names-block anim-rise">
+        <div class="name-card groom-card">
+          <div class="name-label">चि०</div>
+          <div class="name-big">अंकित</div>
+          <div class="name-sub">सुपुत्र श्री रकम सिंह भाटी</div>
+        </div>
+        <div class="names-divider">
+          <div class="divider-ring">💍</div>
+          <div class="divider-line"></div>
+          <div class="divider-heart">❤️</div>
+          <div class="divider-line"></div>
+          <div class="divider-ring">💍</div>
+        </div>
+        <div class="name-card bride-card">
+          <div class="name-label">आयु०</div>
+          <div class="name-big">आशा</div>
+          <div class="name-sub">सुपुत्री श्री किरनपाल बंसल</div>
+        </div>
+      </div>
+
+      <div class="dates-strip anim-slide-up">
+        <div class="date-pill">
+          <span class="diya">🪔</span>
+          <div>
+            <div class="pill-label">लग्नसगाई</div>
+            <div class="pill-date">शुक्रवार, 17 अप्रैल 2026</div>
+          </div>
+        </div>
+        <div class="date-sep">✦</div>
+        <div class="date-pill">
+          <span class="diya">🌸</span>
+          <div>
+            <div class="pill-label">विवाह</div>
+            <div class="pill-date">मंगलवार, 21 अप्रैल 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="cta-btn anim-pulse" onclick="openInvitation()">
+        <span class="btn-inner">✨ निमंत्रण खोलें ✨</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 2: FAMILY ===== -->
+  <section class="page hidden" id="page2">
+    <div class="card-page">
+      <div class="card-header anim-drop">
+        <div class="shlok-box">
+          <p>वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः।</p>
+          <p>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा।।</p>
+          <p class="blessing-line">— परमपिता परमात्मा की असीम अनुकम्पा से —</p>
+        </div>
+      </div>
+
+      <div class="family-grid">
+        <div class="fam-card anim-slide-left">
+          <div class="fam-badge">वर पक्ष 🌟</div>
+          <p class="fam-ancestors">रव. श्रीमती सावित्री देवी एवं<br/>रव. चौ. इन्दराज सिंह भाटी</p>
+          <p class="fam-intro">अपने सुपुत्र</p>
+          <h2 class="fam-name">चि० अंकित</h2>
+          <p class="fam-parents">सुपुत्र श्रीमती गीता देवी<br/>एवं श्री रकम सिंह भाटी</p>
+          <p class="fam-addr">📍 मार्येचा इकोटेक-11, ग्रेटर नोएडा<br/>गौतमबुद्ध नगर</p>
+          <p class="fam-phone">📞 9958141088 · 9312193487 · 9560532581</p>
+        </div>
+
+        <div class="fam-center anim-zoom-in">
+          <div class="center-ring">💍</div>
+          <div class="center-text">के</div>
+          <div class="center-vivah">🌺 शुभ विवाह 🌺</div>
+          <p class="center-invite">के शुभ अवसर पर<br/>आपको सादर आमंत्रित<br/>करते हैं।</p>
+        </div>
+
+        <div class="fam-card anim-slide-right">
+          <div class="fam-badge">वधू पक्ष 🌟</div>
+          <p class="fam-intro">सुपुत्री</p>
+          <h2 class="fam-name">आयु० आशा</h2>
+          <p class="fam-parents">सुपुत्री श्रीमती राजेन्द्री देवी<br/>एवं श्री किरनपाल बंसल</p>
+          <p class="fam-addr">📍 ग्राम गोठा,<br/>जिला- बागपत</p>
+        </div>
+      </div>
+
+      <button class="nav-btn anim-rise" onclick="showPage(3)">मांगलिक कार्यक्रम देखें →</button>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 3: EVENTS ===== -->
+  <section class="page hidden" id="page3">
+    <div class="card-page">
+      <div class="section-head anim-drop">
+        <span class="sw gold">卐</span>
+        <h2 class="sec-title">मांगलिक कार्यक्रम</h2>
+        <span class="sw gold">卐</span>
+      </div>
+
+      <div class="event-grid">
+        <!-- Lagnsagai -->
+        <div class="ev-card anim-slide-left">
+          <div class="ev-ribbon">लग्नसगाई</div>
+          <div class="ev-icon-big">🪔</div>
+          <div class="ev-date-badge">
+            <span class="ev-day">शुक्रवार</span>
+            <span class="ev-dt">17 अप्रैल 2026</span>
+          </div>
+          <div class="ev-schedule">
+            <div class="sch-row">
+              <span class="sch-name">लग्नसगाई</span>
+              <span class="sch-dots"></span>
+              <span class="sch-time">सायं 05:00 बजे</span>
+            </div>
+            <div class="sch-row">
+              <span class="sch-name">प्रीतिभोज</span>
+              <span class="sch-dots"></span>
+              <span class="sch-time">सायं 06:00 बजे</span>
+            </div>
+          </div>
+          <div class="ev-venue">
+            <span>🏛️</span>
+            <div>
+              <strong>कार्यक्रम स्थल</strong>
+              <p>ग्राम- मार्येचा, इकोटेक-11</p>
+              <p>ग्रेटर नोएडा गौतमबुद्ध नगर</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vivah -->
+        <div class="ev-card anim-slide-right">
+          <div class="ev-ribbon vivah-ribbon">विवाह</div>
+          <div class="ev-icon-big">🌸</div>
+          <div class="ev-date-badge vivah-badge">
+            <span class="ev-day">मंगलवार</span>
+            <span class="ev-dt">21 अप्रैल 2026</span>
+          </div>
+          <div class="ev-schedule">
+            <div class="sch-row">
+              <span class="sch-name">धुडचढ़ी</span>
+              <span class="sch-dots"></span>
+              <span class="sch-time">सायं 03:00 बजे</span>
+            </div>
+            <div class="sch-row">
+              <span class="sch-name">बारात प्रस्थान</span>
+              <span class="sch-dots"></span>
+              <span class="sch-time">सायं 04:00 बजे</span>
+            </div>
+            <div class="sch-row">
+              <span class="sch-name">वधत</span>
+              <span class="sch-dots"></span>
+              <span class="sch-time">सायं 06:00 बजे</span>
+            </div>
+          </div>
+          <div class="ev-venue">
+            <span>🏛️</span>
+            <div>
+              <strong>विवाह स्थल</strong>
+              <p>ग्राम- गोठा, जिला- बागपत</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="party-banner anim-glow-in">
+        🎵 होगी पार्टी · बजेगा गाना · हमारे भाई की शादी में 🎵
+      </div>
+
+      <button class="nav-btn" onclick="showPage(4)">उलटी गिनती देखें →</button>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 4: COUNTDOWN ===== -->
+  <section class="page hidden" id="page4">
+    <div class="card-page final-card">
+      <div class="final-top anim-drop">
+        <div class="final-om">🕉️</div>
+        <h2 class="final-title">विवाह की उलटी गिनती</h2>
+        <p class="final-sub">21 अप्रैल 2026 · ग्राम गोठा, बागपत</p>
+      </div>
+
+      <div class="countdown anim-zoom-in">
+        <div class="cd-box"><span id="days">00</span><label>दिन</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="hours">00</span><label>घंटे</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="minutes">00</span><label>मिनट</label></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span id="seconds">00</span><label>सेकंड</label></div>
+      </div>
+
+      <div class="final-couple anim-rise">
+        <div class="fc-name">चि० अंकित</div>
+        <div class="fc-heart">💕</div>
+        <div class="fc-name">आयु० आशा</div>
+      </div>
+
+      <p class="final-invite anim-fade">
+        आप सभी से सादर निवेदन है कि इस शुभ अवसर पर<br/>
+        पधारकर हमें अनुग्रहित करें।
+      </p>
+
+      <div class="footer-row anim-slide-up">
+        <div class="footer-col">
+          <strong>दर्शनाभिलाषी</strong>
+          <p>समस्त सम्बन्धी एवं भाटी परिवार</p>
+        </div>
+        <div class="footer-divider">✦</div>
+        <div class="footer-col">
+          <strong>विनीत</strong>
+          <p>आप और हम</p>
+        </div>
+      </div>
+
+      <button class="nav-btn home-btn" onclick="showPage(1)">🏠 मुख्य पृष्ठ</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
